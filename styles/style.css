@@ -1,19 +1,36 @@
 body {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
 }
-
-body h1 {
-  font-size: 30px;
-  text-transform: uppercase;
+#logo,
+#start-btn,
+#game-board {
+  margin: 2rem;
 }
-
+#logo {
+  background-color: rgb(214, 206, 190);
+  border: 2px solid rgb(165, 142, 102);
+  border-radius: 30px;
+  box-shadow: 0 0 50px rgba(165, 142, 102, 0.8);
+}
 body button {
   font-size: 20px;
   background-color: black;
   color: #fff;
-  padding: 10px 20px;
-  border: 0;
-  box-shadow: 0;
-  border-radius: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
   margin-bottom: 20px;
+  height: 2rem;
+  width: 12rem;
+}
+
+#game-board {
+  flex: 1;
+  width: 50%;
+  background-image: url("../images/bg.png");
+  background-size: cover;
 }
